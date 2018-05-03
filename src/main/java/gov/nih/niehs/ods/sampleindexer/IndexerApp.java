@@ -23,5 +23,11 @@ public class IndexerApp implements CommandLineRunner {
 
 	// Only if I implement the CommandLineRunner interface...
 	public void run(String... args) throws Exception {
+		// host, port, zone, user, password, url prefix
+
+		if (args.length != 6) {
+			throw new IllegalArgumentException("need host, port, zone, user, password, urlprefix");
+		}
+
 	}
 }
